@@ -368,6 +368,28 @@
     .ceo-photo{width:100%;height:220px}
   }
 
+  /* 팀 컬처 */
+  .team{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:stretch;
+    background:#fff;border:1px solid var(--cream-2);border-radius:var(--radius-lg);
+    padding:40px;margin-top:24px}
+  .team-photo{border-radius:var(--radius-md);overflow:hidden;background:var(--green-800)}
+  .team-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .team-body{display:flex;flex-direction:column;justify-content:center}
+  .team-body h3{font-size:clamp(20px,2.2vw,26px);font-weight:900;color:var(--ink);
+    margin:0 0 14px;letter-spacing:-.01em;word-break:keep-all}
+  .team-body p{color:var(--muted);line-height:1.72;max-width:560px;word-break:keep-all}
+  .team-tees{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;max-width:560px}
+  .team-tees figure{margin:0;border:1px solid var(--cream-2);border-radius:var(--radius-md);
+    overflow:hidden;background:#fff}
+  .team-tees img{width:100%;display:block}
+  .team-tees figcaption{font-size:12px;font-weight:700;color:var(--muted);
+    padding:10px 14px;letter-spacing:.08em;text-transform:uppercase;border-top:1px solid var(--cream-2)}
+  @media(max-width:720px){
+    .team{grid-template-columns:1fr;gap:24px;padding:28px 24px}
+    .team-photo{height:300px}
+    .team-tees{grid-template-columns:1fr 1fr;gap:10px}
+  }
+
   /* Footer */
   footer{background:var(--green-900);color:rgba(245,241,232,.7);padding:56px 0 40px;border-top:1px solid var(--line)}
   .foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
@@ -800,6 +822,20 @@
           <span class="ceo-tag">대표 인사말</span>
           <blockquote class="ceo-quote">"반려견이 매일 먹는 간식인 만큼, 저희는 좋은 원료와 정직한 레시피라는 기본에 더 집중합니다. 보호자와 파트너 모두가 믿고 오래 함께할 수 있는 브랜드를 만들겠습니다."</blockquote>
           <div class="ceo-name">장성환<span>대표이사 · 주식회사 반려동행</span></div>
+        </div>
+      </div>
+
+      <!-- 팀 컬처 -->
+      <div class="team">
+        <div class="team-photo"><img src="zerolabs_homepage_assets/team_walk.webp" alt="함께 걷는 제로랩스 팀" loading="lazy"></div>
+        <div class="team-body">
+          <span class="ceo-tag">Team</span>
+          <h3>우리는 매일 '동행'을 연습합니다</h3>
+          <p>반려동행이라는 이름처럼, 제로랩스 팀은 같은 옷을 입고 같은 방향으로 걷습니다. 좋은 간식은 결국 함께 일하는 사람들에게서 나온다고 믿습니다.</p>
+          <div class="team-tees">
+            <figure><img src="zerolabs_homepage_assets/tee_black.webp" alt="제로랩스 팀 티셔츠 블랙" loading="lazy"><figcaption>Team Tee · Black</figcaption></figure>
+            <figure><img src="zerolabs_homepage_assets/tee_white.webp" alt="제로랩스 팀 티셔츠 화이트" loading="lazy"><figcaption>Team Tee · White</figcaption></figure>
+          </div>
         </div>
       </div>
 

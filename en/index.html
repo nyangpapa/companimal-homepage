@@ -368,6 +368,28 @@
     .ceo-photo{width:100%;height:220px}
   }
 
+  /* 팀 컬처 */
+  .team{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:stretch;
+    background:#fff;border:1px solid var(--cream-2);border-radius:var(--radius-lg);
+    padding:40px;margin-top:24px}
+  .team-photo{border-radius:var(--radius-md);overflow:hidden;background:var(--green-800)}
+  .team-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .team-body{display:flex;flex-direction:column;justify-content:center}
+  .team-body h3{font-size:clamp(20px,2.2vw,26px);font-weight:900;color:var(--ink);
+    margin:0 0 14px;letter-spacing:-.01em;word-break:keep-all}
+  .team-body p{color:var(--muted);line-height:1.72;max-width:560px;word-break:keep-all}
+  .team-tees{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;max-width:560px}
+  .team-tees figure{margin:0;border:1px solid var(--cream-2);border-radius:var(--radius-md);
+    overflow:hidden;background:#fff}
+  .team-tees img{width:100%;display:block}
+  .team-tees figcaption{font-size:12px;font-weight:700;color:var(--muted);
+    padding:10px 14px;letter-spacing:.08em;text-transform:uppercase;border-top:1px solid var(--cream-2)}
+  @media(max-width:720px){
+    .team{grid-template-columns:1fr;gap:24px;padding:28px 24px}
+    .team-photo{height:300px}
+    .team-tees{grid-template-columns:1fr 1fr;gap:10px}
+  }
+
   /* Footer */
   footer{background:var(--green-900);color:rgba(245,241,232,.7);padding:56px 0 40px;border-top:1px solid var(--line)}
   .foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
@@ -800,6 +822,20 @@
           <span class="ceo-tag">Message from the CEO</span>
           <blockquote class="ceo-quote">"Because these are treats dogs eat every day, we focus on the basics: quality ingredients and honest recipes. We will build a brand that pet parents and partners can trust for the long run."</blockquote>
           <div class="ceo-name">Jang Seong-hwan<span>CEO · Companimal Co., Ltd.</span></div>
+        </div>
+      </div>
+
+      <!-- 팀 컬처 -->
+      <div class="team">
+        <div class="team-photo"><img src="/zerolabs_homepage_assets/team_walk.webp" alt="The ZERO LABS team, walking together" loading="lazy"></div>
+        <div class="team-body">
+          <span class="ceo-tag">Team</span>
+          <h3>We practice walking together, every day</h3>
+          <p>True to our name — Companimal, a companion that walks with you — the ZERO LABS team wears the same shirt and walks in the same direction. We believe good treats come from a team that moves together.</p>
+          <div class="team-tees">
+            <figure><img src="/zerolabs_homepage_assets/tee_black.webp" alt="ZERO LABS team t-shirt, black" loading="lazy"><figcaption>Team Tee · Black</figcaption></figure>
+            <figure><img src="/zerolabs_homepage_assets/tee_white.webp" alt="ZERO LABS team t-shirt, white" loading="lazy"><figcaption>Team Tee · White</figcaption></figure>
+          </div>
         </div>
       </div>
 

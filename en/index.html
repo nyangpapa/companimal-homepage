@@ -6,6 +6,7 @@
 <!-- TONE: Forest & Gold -->
 <title>ZERO LABS · Companimal Co., Ltd. | A New Standard for Dog Treats</title>
 <meta name="description" content="ZERO LABS makes dog treats that both pet parents and partners can trust — built on quality ingredients, balanced recipes, and a reliable supply system.">
+<meta name="keywords" content="ZERO LABS, Companimal, dog treats, dog treats Korea, dog treats wholesale, pet food B2B, K-pet">
 <meta name="theme-color" content="#1f3325">
 
 <!-- Favicon (반려동행 로고) -->
@@ -25,6 +26,26 @@
 <meta property="og:image" content="https://companimal.kr/zerolabs_homepage_assets/og_image.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Companimal × ZERO LABS">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "주식회사 반려동행",
+  "alternateName": ["반려동행", "제로랩스", "ZERO LABS", "Companimal Co., Ltd."],
+  "url": "https://companimal.kr/",
+  "logo": "https://companimal.kr/zerolabs_homepage_assets/og_image.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "제로랩스",
+    "alternateName": "ZERO LABS"
+  },
+  "sameAs": [
+    "https://zerolabs.co.kr/",
+    "https://smartstore.naver.com/zerolabs"
+  ]
+}
+</script>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ZERO LABS · Companimal Co., Ltd.">
 <meta name="twitter:image" content="https://companimal.kr/zerolabs_homepage_assets/og_image.png?v=2">
@@ -413,20 +434,21 @@
     .partner-grid{grid-template-columns:1fr;gap:40px}
     .profile{grid-template-columns:repeat(2,1fr)}
     .sec{padding:72px 0}
-  }
-  @media (max-width:640px){
+    /* 640~920px에서 내비 링크가 로고와 겹쳐 햄버거 메뉴로 전환 */
     .nav-links{
-      position:fixed;inset:88px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;
+      position:fixed;inset:76px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;
       background:var(--green-800);border-bottom:1px solid var(--line);
       padding:12px 24px 24px;
       transform:translateY(-140%);transition:transform .3s ease;
-      max-height:calc(100vh - 88px);overflow:auto;
+      max-height:calc(100vh - 76px);overflow:auto;
     }
     .nav-links.open{transform:translateY(0)}
     .nav-links a.link{padding:15px 4px;border-bottom:1px solid var(--line);font-size:17px;opacity:1}
     .nav-links .btn{display:inline-flex;margin-top:14px;justify-content:center}
     .hamburger{display:block}
     .nav-actions .btn-desktop{display:none}
+  }
+  @media (max-width:640px){
     .principles,.prod-grid,.ch-grid,.profile{grid-template-columns:1fr}
     .cta-band{padding:36px 28px}
     .partner-visual{padding:32px 26px}
@@ -455,9 +477,9 @@
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Companimal × ZERO LABS Home">
-      <img class="lg-corp" src="/zerolabs_homepage_assets/lockup_companimal.png" alt="Companimal logo">
+      <img class="lg-corp" src="/zerolabs_homepage_assets/lockup_companimal.webp" alt="Companimal logo">
       <span class="collab-x" aria-hidden="true">×</span>
-      <img class="lg-brand" src="/zerolabs_homepage_assets/lockup_zerolabs.png" alt="zero labs logo">
+      <img class="lg-brand" src="/zerolabs_homepage_assets/lockup_zerolabs.webp" alt="zero labs logo">
     </a>
     <nav class="nav-links" id="navLinks">
       <a class="link" href="#approach">Approach</a>
@@ -499,7 +521,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-card">
-          <img src="/zerolabs_homepage_assets/hero-dog-companion.webp" alt="A pet parent bonding with a dog over ZERO LABS treats">
+          <img src="/zerolabs_homepage_assets/hero-dog-companion.webp" alt="A pet parent bonding with a dog over ZERO LABS treats" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -854,9 +876,9 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <img class="lg-corp" src="/zerolabs_homepage_assets/lockup_companimal.png" alt="Companimal logo">
+        <img class="lg-corp" src="/zerolabs_homepage_assets/lockup_companimal.webp" alt="Companimal logo">
         <span class="collab-x" aria-hidden="true">×</span>
-        <img class="lg-brand" src="/zerolabs_homepage_assets/lockup_zerolabs.png" alt="zero labs logo">
+        <img class="lg-brand" src="/zerolabs_homepage_assets/lockup_zerolabs.webp" alt="zero labs logo">
       </div>
       <nav class="foot-links">
         <a href="#approach">Approach</a>

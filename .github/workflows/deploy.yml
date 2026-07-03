@@ -12,6 +12,8 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    # Pages 백엔드 불안정으로 인한 간헐 실패 시 실패 메일 발송 방지 (반영 여부는 라이브 콘텐츠로 검증)
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

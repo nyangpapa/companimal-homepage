@@ -387,8 +387,8 @@
   .btn-kakao:hover{background:#f5d900}
   /* 카카오 플로팅 버튼 */
   .kakao-float{
-    position:fixed;left:50%;bottom:22px;z-index:60;
-    transform:translateX(-50%);
+    position:fixed;right:22px;top:50%;z-index:60;
+    transform:translateY(-50%);
     display:flex;align-items:center;justify-content:center;gap:8px;
     height:54px;padding:0 22px 0 18px;border-radius:999px;
     background:#FEE500;color:#191919;font-weight:800;font-size:14.5px;
@@ -397,10 +397,11 @@
     transition:transform .18s ease, box-shadow .18s ease;
   }
   .kakao-float .kf-label{display:block;transform:translateY(.5px)}
-  .kakao-float:hover{transform:translate(-50%,-3px);box-shadow:0 14px 32px rgba(0,0,0,.36)}
+  .kakao-float:hover{transform:translateY(-50%) scale(1.05);box-shadow:0 14px 32px rgba(0,0,0,.36)}
   .kakao-float svg{width:26px;height:26px;fill:#191919;flex:0 0 auto}
   @media(max-width:640px){
-    .kakao-float{height:48px;bottom:16px;font-size:14px;padding:0 18px 0 15px}
+    .kakao-float{right:14px;height:48px;width:48px;padding:0}
+    .kakao-float .kf-label{display:none}
   }
 
   /* Company - cream */

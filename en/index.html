@@ -93,7 +93,9 @@
     --max:1180px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+  /* 챕터 스크롤 스냅: 일정 이상 내리면 다음 챕터 시작점으로 자동 정렬 */
+  .hero,.sec,.channels,.company{scroll-snap-align:start;scroll-margin-top:76px}
   body{
     font-family:'Pretendard',system-ui,-apple-system,sans-serif;
     color:var(--ink);
@@ -135,7 +137,6 @@
   header.scrolled{
     background:rgba(31,51,37,.9);
     border-bottom-color:var(--line);
-    box-shadow:0 12px 34px rgba(0,0,0,.32);
     -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
   }
   .nav{

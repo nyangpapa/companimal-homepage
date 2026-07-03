@@ -94,7 +94,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  /* 챕터 자동 정렬은 스크롤 종료 후 JS로 처리 (스크롤 중 개입 없음 = 버벅임 방지) */
+  /* 메뉴 앵커 이동 시 제목이 헤더에 가리지 않도록 */
   .hero,.sec,.channels,.company{scroll-margin-top:76px}
   body{
     font-family:'Pretendard',system-ui,-apple-system,sans-serif;
@@ -976,33 +976,6 @@
     onScroll();
   })();
 
-  /* 챕터 자동 정렬: 스크롤이 멈춘 뒤 다음 챕터 시작이 가까우면 부드럽게 끌어올림
-     (스크롤 중에는 개입하지 않아 버벅임 없음) */
-  (function(){
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var HEADER = 76;
-    var secs = [].slice.call(document.querySelectorAll('.sec,.channels,.company'));
-    var timer = null, busy = false;
-    function settle(){
-      if (busy) return;
-      var y = window.scrollY;
-      var limit = Math.min(360, window.innerHeight * 0.42);
-      for (var i = 0; i < secs.length; i++){
-        var top = secs[i].offsetTop - HEADER;
-        var d = top - y;
-        if (d > 30 && d < limit){
-          busy = true;
-          window.scrollTo({top: top, behavior: 'smooth'});
-          setTimeout(function(){ busy = false; }, 800);
-          return;
-        }
-      }
-    }
-    window.addEventListener('scroll', function(){
-      clearTimeout(timer);
-      timer = setTimeout(settle, 180);
-    }, {passive:true});
-  })();
 </script>
 
 </body>

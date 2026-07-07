@@ -8,6 +8,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://companimal.kr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://companimal.kr/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://companimal.kr/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://companimal.kr/zh-hant/"/>
   </url>
   <url>
     <loc>https://companimal.kr/en/</loc>
@@ -16,6 +17,7 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://companimal.kr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://companimal.kr/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://companimal.kr/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://companimal.kr/zh-hant/"/>
   </url>
   <url>
     <loc>https://companimal.kr/zh/</loc>
@@ -24,5 +26,15 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://companimal.kr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://companimal.kr/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://companimal.kr/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://companimal.kr/zh-hant/"/>
+  </url>
+  <url>
+    <loc>https://companimal.kr/zh-hant/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://companimal.kr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://companimal.kr/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://companimal.kr/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://companimal.kr/zh-hant/"/>
   </url>
 </urlset>
